@@ -44,14 +44,14 @@ public class sumaTest {
     @Test
     public void testSuma() {
         System.out.println("suma");
-        double n1 = 0.0;
-        double n2 = 0.0;
+        double n1 = 6.0;
+        double n2 = 7.0;
         suma instance = new suma();
-        double expResult = 0.0;
+        double expResult = 13.0;
         double result = instance.suma(n1, n2);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

@@ -44,14 +44,14 @@ public class restaTest {
     @Test
     public void testResta() {
         System.out.println("resta");
-        double n1 = 0.0;
-        double n2 = 0.0;
+        double n1 = 5.0;
+        double n2 = 2.0;
         resta instance = new resta();
-        double expResult = 0.0;
+        double expResult = 3.0;
         double result = instance.resta(n1, n2);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
