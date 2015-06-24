@@ -34,7 +34,6 @@ public class principal extends javax.swing.JFrame {
         t1 = new javax.swing.JTextField();
         t3 = new javax.swing.JTextField();
         label1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -47,13 +46,6 @@ public class principal extends javax.swing.JFrame {
 
         label1.setText("jLabel1");
 
-        jButton2.setText("Resta");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -61,10 +53,7 @@ public class principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2))
+                    .addComponent(jButton1)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(t1, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -83,9 +72,7 @@ public class principal extends javax.swing.JFrame {
                 .addGap(52, 52, 52)
                 .addComponent(label1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                .addComponent(jButton1)
                 .addContainerGap())
         );
 
@@ -94,18 +81,14 @@ public class principal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:        
-        t1.setText("mierda1"+" mierda2 de toshiba");
+        //t1.setText("mierda1"+" mierda2 de toshiba");
         var1++;
-        t3.setText(""+var1);
-        label1.setText(""+var1*2);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        resta r =new resta();
+        //t3.setText(""+var1);
+        //label1.setText(""+var1*2);
+        suma s = new suma();                
+        label1.setText(s.suma(Double.parseDouble(t1.getText()),Double.parseDouble(t3.getText()))+"");
         
-        label1.setText(r.resta(Double.parseDouble(t1.getText()), Double.parseDouble(t3.getText()))+"");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,7 +127,6 @@ public class principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel label1;
     private javax.swing.JTextField t1;
     private javax.swing.JTextField t3;
