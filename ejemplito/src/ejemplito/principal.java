@@ -98,7 +98,7 @@ public class principal extends javax.swing.JFrame {
         var1++;
         //t3.setText(""+var1);
         //label1.setText(""+var1*2);
-        suma s = new suma();                
+        //suma s = new suma();                
         label1.setText(s.suma(Double.parseDouble(t1.getText()),Double.parseDouble(t3.getText()))+"");
         
     }//GEN-LAST:event_jButton1ActionPerformed
