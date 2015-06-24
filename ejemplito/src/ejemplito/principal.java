@@ -105,7 +105,7 @@ public class principal extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        resta r = new resta();
+        //resta r = new resta();
         label1.setText(r.resta(Double.parseDouble(t1.getText()), Double.parseDouble(t3.getText()))+"");
         
         
